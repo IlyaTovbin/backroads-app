@@ -12,7 +12,7 @@ const Tours = () => {
             <div className="section-center featured-center">
                 {tours.map(tour => {
                     return (
-                        <article className="tour-card">
+                        <article key={tour.id} className="tour-card">
                             <div className="tour-img-container">
                                 <img src={tour.image} className="tour-img" alt={tour.title}/>
                                 <p className="tour-date">{tour.date}</p>
